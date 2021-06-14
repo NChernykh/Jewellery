@@ -2,6 +2,9 @@ import {ieFix} from './utils/ie-fix';
 import {iosVhFix} from './utils/ios-vh-fix';
 
 import {initModals} from './modules/init-modals';
+import {initBurger} from './modules/init-burger';
+import {initSwiper} from './modules/init-swiper';
+import {initAccordion} from './modules/init-accordion';
 
 // Utils
 // ---------------------------------
@@ -13,3 +16,6 @@ iosVhFix();
 // ---------------------------------
 
 initModals();
+initBurger();
+initSwiper();
+initAccordion();

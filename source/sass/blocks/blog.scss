@@ -1,0 +1,47 @@
+.blog {
+  margin-bottom: 120px;
+
+  @include viewport--md {
+    margin-bottom: 70px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 60px;
+  }
+}
+
+.blog__wrapper {
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 30px;
+  grid-template-areas:
+    "article-1 article-3"
+    "article-2 article-3";
+
+  @include viewport--md {
+    grid-template: 1fr 1fr 1fr/ 1fr;
+    row-gap: 50px;
+    grid-template-areas:
+      "article-1"
+      "article-2"
+      "article-3";
+  }
+
+  @include viewport--sm {
+    row-gap: 40px;
+  }
+}
+
+.blog__title {
+  margin-bottom: 18px;
+}
+
+.blog__link {
+  margin-bottom: 60px;
+  line-height: 26px;
+
+  @include viewport--sm {
+    margin-bottom: 50px;
+  }
+}

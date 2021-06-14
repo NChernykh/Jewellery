@@ -1,0 +1,83 @@
+.footer-form {
+  width: 500px;
+  position: relative;
+  color: $color-default-white;
+
+  label {
+    flex: 1;
+  }
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 25px;
+    background: transparent;
+    color: $color-default-white;
+    font-size: 14px;
+
+    &:-webkit-autofill {
+      box-shadow: inset 0 0 0 1000px $color-default-black;
+      -webkit-text-fill-color: $color-default-white;
+    }
+
+    &:hover::placeholder {
+      opacity: 0.5;
+    }
+  }
+
+  @media (max-width: 1350px) {
+    width: 560px;
+    margin-bottom: 45px;
+  }
+
+  @include viewport--sm {
+    width: 100%;
+  }
+}
+
+.footer-form__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: $font-family--cormorant;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 32px;
+
+  @include viewport--sm {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 13px;
+  }
+}
+
+.footer-form__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-zorba;
+}
+
+.footer-form__inner {
+  padding-bottom: 8px;
+  display: flex;
+  border-bottom: 1px solid $color-default-white;
+}
+
+.footer-form__submit {
+  position: relative;
+  margin-bottom: 0;
+  padding: 0;
+  padding-right: 40px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  svg {
+    position: absolute;
+    top: 8px;
+    right: 0;
+  }
+}

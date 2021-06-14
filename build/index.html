@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Project Name - Jewellery">
+
+<link rel="preload" href="fonts/poppins-500.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/cormorant-garamond-700.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" crossorigin="anonymous">
+
+<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "../img/320.jpg" );
+  }
+  /* Tablet */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "../img/768.jpg" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 960px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url( "../img/1366.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
+
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>Список страниц</title>
+
+  <style>
+    .container {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+    }
+
+    a {
+      color: rgb(10, 10, 175);
+    }
+
+    li {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 7px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      display: block;
+      margin-bottom: 40px;
+    }
+
+    @media (max-width: 768px) {
+      ol {
+        padding-left: 20px;
+      }
+
+      ol li {
+        margin-bottom: 15px;
+      }
+
+      .container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <main>
+    <div class="container">
+      <img src="https://via.placeholder.com/300x150" width="300" alt="Логотип проекта">
+      <h1>Список страниц и компонентов</h1>
+      <ol>
+        <li>
+          <a href="components.html">UI Kit — components.html</a>
+        </li>
+        <li>
+          <a href="main.html">Главная — main.html</a>
+        </li>
+        <li>
+          <a href="#">Название страницы (состояние страницы, если отдельное) — ссылка на страницу</a>
+        </li>
+      </ol>
+    </div>
+  </main>
+
+</body>
+</html>

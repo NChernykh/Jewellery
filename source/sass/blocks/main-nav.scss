@@ -1,0 +1,189 @@
+.main-nav {
+  width: 100%;
+  padding-top: 10px;
+
+  @include viewport--md {
+    padding-top: 20px;
+  }
+
+  @include viewport--sm {
+    padding-top: 3px;
+  }
+}
+
+.main-nav__wrapper {
+  @include viewport--md {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &--user {
+    justify-content: flex-end;
+    margin-bottom: 69px;
+
+    @include viewport--md {
+      display: none;
+      margin-top: 50px;
+      margin-bottom: 55px;
+    }
+  }
+
+  &--site {
+    justify-content: center;
+    padding-left: 11px;
+  }
+
+  @include viewport--md {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+}
+
+.main-nav__item {
+  margin-right: 35px;
+
+  &--form {
+    margin-right: auto;
+
+    @include viewport--md {
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+
+  &--cart span {
+    padding-left: 7px;
+  }
+
+  &--cart svg {
+    display: none;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @include viewport--md {
+    margin-bottom: 21px;
+
+    &--login {
+      display: none;
+    }
+
+    &--cart {
+      position: absolute;
+      margin-bottom: 0;
+      right: 0;
+      top: 10px;
+    }
+
+    &--cart .main-nav__link {
+      color: transparent;
+      font-size: 0;
+      width: 20px;
+      height: 19px;
+    }
+
+    &--cart svg {
+      display: inline-block;
+      fill: $color-medium-wood;
+      stroke: $color-default-white;
+    }
+  }
+}
+
+.main-nav__list--user a {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.main-nav__link {
+  font-size: 16px;
+  line-height: 24px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @include viewport--md {
+    color: $color-default-white;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @include viewport--md {
+    display: block;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+@include viewport--md {
+  .main-nav__toggle svg {
+    stroke: $color-black;
+  }
+
+  .main-nav--opened {
+    padding-top: 20px;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav--opened .main-nav__list--user {
+    margin-top: 58px;
+    margin-bottom: 25px;
+  }
+
+  .main-nav--opened .main-nav__list--site {
+    padding-left: 0;
+    margin-bottom: 18px;
+  }
+
+  .main-nav--opened .main-nav__item--cart {
+    top: 23px;
+  }
+
+  .main-nav--opened .main-nav__toggle svg {
+    stroke: $color-default-white;
+  }
+
+  .main-nav--opened .cart {
+    display: none;
+  }
+}
+
+@include viewport--sm {
+  .main-nav--opened {
+    padding-top: 3px;
+  }
+
+  .main-nav--opened .main-nav__list--user {
+    margin-top: 40px;
+    margin-bottom: 15px;
+  }
+
+  .main-nav--opened .main-nav__list--site {
+    margin-bottom: 10px;
+  }
+
+  .main-nav--opened .main-nav__item--cart {
+    top: 7px;
+  }
+}

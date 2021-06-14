@@ -1,0 +1,33 @@
+.add-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @include viewport--md {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.add-menu__item {
+  margin-bottom: 18px;
+
+  &--login {
+    margin-top: 25px;
+
+    @include viewport--sm {
+      margin-top: 15px;
+    }
+  }
+}
+
+.add-menu__link {
+  color: $color-default-white;
+  font-size: 18px;
+  line-height: 23px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

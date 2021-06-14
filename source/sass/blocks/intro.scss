@@ -1,0 +1,79 @@
+.intro {
+  background-image: url("../img/bg/intro-desktop@1x.jpg");
+  background-color: $color-medium-wood;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 122px;
+
+  @include retina {
+    background-image: url("../img/bg/intro-desktop@2x.jpg");
+    background-size: 1366px auto;
+  }
+
+  @include viewport--md {
+    margin-bottom: 72px;
+    background-image: url("../img/bg/intro-tablet@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg/intro-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  @include viewport--sm {
+    margin-bottom: 60px;
+    background-image: url("../img/bg/intro-mobile@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg/intro-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
+  }
+}
+
+.intro__wrapper {
+  margin: 0 auto;
+  padding: 181px 40px;
+  font-family: $font-family--cormorant;
+  text-align: center;
+  color: $color-default-white;
+
+  @include viewport--sm {
+    padding: 193px 40px 186px;
+  }
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 56px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  @include viewport--md {
+    padding-right: 17px;
+  }
+
+  @include viewport--sm {
+    font-size: 38px;
+    line-height: 40px;
+  }
+}
+
+.intro__text {
+  margin: 0;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 44px;
+
+  @include viewport--md {
+    padding-right: 17px;
+  }
+
+  @include viewport--sm {
+    font-size: 34px;
+    padding-right: 0;
+  }
+}

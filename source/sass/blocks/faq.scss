@@ -1,0 +1,116 @@
+.faq {
+  margin-bottom: 103px;
+
+  @include viewport--md {
+    margin-bottom: 63px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 50px;
+  }
+}
+
+.faq__title {
+  margin-bottom: 48px;
+  font-size: 36px;
+
+  @include viewport--sm {
+    margin-bottom: 28px;
+  }
+}
+
+.faq__wrapper {
+  margin: 0 auto;
+  width: 970px;
+  border: 1px solid $color-medium-wood;
+
+  @include viewport--md {
+    width: 100%;
+  }
+}
+
+.faq__colomn {
+  padding: 42px 42px 44px;
+  border-bottom: 1px solid $color-medium-wood;
+
+  @include viewport--md {
+    padding: 44px 50px;
+  }
+
+  @include viewport--sm {
+    padding: 15px 25px 20px;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.faq__text {
+  display: none;
+  width: 530px;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 8px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @include viewport--md {
+    padding-left: 0;
+    padding-top: 26px;
+  }
+
+  @include viewport--sm {
+    padding-top: 13px;
+    font-size: 14px;
+    width: 86%;
+  }
+}
+
+.faq__subtitle {
+  position: relative;
+  margin: 0;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    right: 12px;
+    top: 4px;
+    border-top: 1px solid $color-medium-wood;
+    border-right: 1px solid $color-medium-wood;
+    transform: rotate(135deg);
+  }
+
+  &--show::before,
+  &--nojs::before {
+    transform: rotate(-45deg);
+  }
+
+  &--show + .faq__text,
+  &--nojs + .faq__text {
+    display: block;
+  }
+
+  @include viewport--md {
+    &::before {
+      width: 16px;
+      height: 16px;
+      right: 2px;
+      top: 2px;
+    }
+  }
+
+  @include viewport--sm {
+    font-size: 16px;
+  }
+}

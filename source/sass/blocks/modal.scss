@@ -80,13 +80,11 @@
     }
   }
 
-  &--fit-content {
-    .modal__content {
-      width: auto;
+  &--fit-content .modal__content {
+    width: auto;
 
-      @include viewport--sm {
-        width: 100%;
-      }
+    @include viewport--sm {
+      width: 100%;
     }
   }
 

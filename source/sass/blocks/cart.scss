@@ -1,0 +1,20 @@
+.cart {
+  fill: $color-default-white;
+  stroke: $color-black;
+  display: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  @include viewport--md {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 24px;
+  }
+
+  @include viewport--sm {
+    top: 5px;
+  }
+}

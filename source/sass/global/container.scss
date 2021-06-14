@@ -1,19 +1,19 @@
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 88px;
 
   @include viewport--lg {
-    padding: 0 32px;
+    padding: 0 88px;
   }
 
   @include viewport--md {
-    padding: 0 24px;
+    padding: 0 45px;
   }
 
   @include viewport--sm {
-    padding: 0 16px;
+    padding: 0 15px;
   }
 
   &--no-padding {

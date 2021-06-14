@@ -1,28 +1,81 @@
-<header class="header @@if (context.mod) { header--@@mod }">
-  <div class="header__wrapper">
-    <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
-      Логотип
-    </a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Страница 1</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Страница 2</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Страница 3</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<header class="header header--opened header--nojs  @@if (context.mod) { header--@@mod }">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
+        <img src="img/svg/logo.svg" width="66" height="66" alt="Логотип Jewellery">
+      </a>
+      <a class="header__logo header__logo--tablet" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
+        <img src="img/svg/logo-tablet.svg" width="66" height="66" alt="Логотип Jewellery">
+      </a>
+      <nav class="main-nav main-nav--opened main-nav--nojs">
+        <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+          <svg width="25" height="25">
+            <use xlink:href="img/sprite_auto.svg#icon-burger"></use>
+          </svg>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list main-nav__list--user">
+            <li class="main-nav__item main-nav__item--form">
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
+                <button class="search-form__submit" type="submit">
+                  <svg class="search-form__icon" width="14" height="14">
+                    <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                  </svg>
+                </button>
+                <label class="search-form__label" aria-label="Введите запрос">
+                  <input class="search-form__input" type="search" name="search" placeholder="Type here to search">
+                </label>
+              </form>
+            </li>
+            <li class="main-nav__item main-nav__item--login">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="../login.html" }>Login</a>
+            </li>
+            <li class="main-nav__item main-nav__item--cart">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="../cart.html" }>Cart<span>0</span>
+                <svg width="20" height="19">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="main-nav__list main-nav__list--site">
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="../catalog.html" }>What’s new</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="../catalog.html" }>Chokers</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="../catalog.html" }>Necklaces</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 3) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 3) { href="../catalog.html" }>Rings</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 4) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 4) { href="../catalog.html" }>Earrings</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list add-menu">
+            <li class="add-menu__item">
+              <a href="" class="add-menu__link">About CH</a>
+            </li>
+            <li class="add-menu__item">
+              <a href="" class="add-menu__link">Stores & Hours</a>
+            </li>
+            <li class="add-menu__item">
+              <a href="" class="add-menu__link">Contact Us</a>
+            </li>
+            <li class="add-menu__item add-menu__item--login">
+              <a href="#" class="add-menu__link">Login</a>
+            </li>
+          </ul>
+        </div>
+        <a class="cart" href="cart.html">
+          <svg width="20" height="19">
+            <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+          </svg>
+        </a>
+      </nav>
+    </div>
   </div>
 </header>

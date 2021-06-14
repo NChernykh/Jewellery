@@ -10,9 +10,11 @@ $color-transparent:               rgba(255, 255, 255, 0);
 
 // Base
 
-$color-black:                     #0e0e0e;
+$color-black:                     #1d1613;
 $color-white:                     #f2f2f2;
-$color-blue:                      #2c39f2;
+$color-medium-wood:               #a87b62;
+$color-zorba:                     #9b9997;
+$color-desert-storm:              #f0eae4;
 
 // Gradient
 
@@ -21,7 +23,8 @@ $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0
 // Typography
 //---------------------------------
 
-$font-family--:                     "", "Arial", sans-serif;
+$font-family--:                     "Poppins", "Arial", sans-serif;
+$font-family--cormorant:            "Cormorant Garamond", "Arial", sans-serif;
 
 // Animation
 //---------------------------------
@@ -41,5 +44,5 @@ $viewport--xxl:                     1920px;
 // Retina
 //---------------------------------
 
-$retina-dpi:                        144dpi;
-$retina-dppx:                       1.5dppx;
+$retina-dpi:                        192dpi;
+$retina-dppx:                       2dppx;

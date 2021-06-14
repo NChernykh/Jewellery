@@ -1,0 +1,127 @@
+.slider {
+  margin-bottom: 100px;
+
+  @include viewport--md {
+    margin-bottom: 53px;
+  }
+}
+
+.slider__title {
+  margin-bottom: 23px;
+
+  @include viewport--md {
+    margin-bottom: 20px;
+  }
+}
+
+.slider__link {
+  margin-bottom: 60px;
+
+  @include viewport--md {
+    margin-bottom: 52px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 43px;
+  }
+}
+
+//navigation
+
+.slider .swiper-button-next,
+.slider .swiper-button-prev {
+  top: 47px;
+  width: 30px;
+
+  svg {
+    stroke: $color-medium-wood;
+  }
+
+  &:hover svg {
+    stroke: $color-black;
+  }
+
+  @include viewport--md {
+    width: 40px;
+
+    svg {
+      width: 37px;
+      height: 16px;
+    }
+  }
+
+  @include viewport--sm {
+    display: none;
+  }
+}
+
+.slider .swiper-button-next {
+  right: 0;
+}
+
+.slider .swiper-button-prev {
+  left: 0;
+}
+
+.slider .swiper-button-next::after,
+.slider .swiper-button-prev::after {
+  content: none;
+}
+
+//pagination
+
+.slider .swiper-wrapper {
+  padding-bottom: 83px;
+
+  @include viewport--md {
+    padding-bottom: 73px;
+  }
+
+  @include viewport--sm {
+    padding-bottom: 26px;
+  }
+}
+
+.slider .swiper-pagination-bullet {
+  width: 12px;
+  height: 18px;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-zorba;
+  opacity: 1;
+
+  &:hover {
+    color: $color-medium-wood;
+  }
+
+  @include viewport--md {
+    width: 14px;
+  }
+
+  @include viewport--sm {
+    display: none;
+  }
+}
+
+.slider .swiper-pagination-bullet-active {
+  color: $color-black;
+}
+
+// fraction
+
+.slider__fraction {
+  display: none;
+
+  @include viewport--sm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: $color-medium-wood;
+
+    span {
+      padding: 0 8px;
+    }
+  }
+}

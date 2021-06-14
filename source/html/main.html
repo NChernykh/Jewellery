@@ -6,7 +6,7 @@
   <title>ProjectName — Главная</title>
 
 </head>
-<body>
+<body style="opacity: 0.5;">
 
   <div style="display: none;">
     @@include("build/img/sprite_auto.svg")
@@ -17,10 +17,316 @@
       "main": true
     })
 
-    <main>
+    <main class="main">
+      <h1 class="visually-hidden">Магазин украшений</h1>
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h2 class="intro__title">Perfection</h2>
+          <p class="intro__text">made to be yours</p>
+        </div>
+      </section>
       <div class="container">
-        <p><a href="#" data-modal="feedback">modal--feedback link</a></p>
-        <p><a href="#" data-modal="success">modal--success link</a></p>
+        <section class="slider">
+          <div class="slider__container swiper-container swiper-no-swiping">
+            <h2 class="title slider__title">New In</h2>
+            <a class="link slider__link" href="catalog.html">Shop Now</a>
+            <div class="slider__wrapper swiper-wrapper">
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-1-desktop@1x.webp, img/content/card-1-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-1-desktop@1x.jpg" srcset="img/content/card-1-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Necklace with amethyst</a></h3>
+                  <span class="card__cost">$ 145</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-2-desktop@1x.webp, img/content/card-2-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-2-desktop@1x.jpg" srcset="img/content/card-2-desktop@2x.jpg 2x" width="270" height="284" alt="Layered сhoker">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Layered сhoker</a></h3>
+                  <span class="card__cost">$ 115</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-3-desktop@1x.webp, img/content/card-3-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-3-desktop@1x.jpg" srcset="img/content/card-3-desktop@2x.jpg 2x" width="270" height="284" alt="Gold chain">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Gold chain</a></h3>
+                  <span class="card__cost">$ 215</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-4-desktop@1x.webp, img/content/card-4-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-4-desktop@1x.jpg" srcset="img/content/card-4-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Galaxy earrings</a></h3>
+                  <span class="card__cost">$ 95</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-1-desktop@1x.webp, img/content/card-1-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-1-desktop@1x.jpg" srcset="img/content/card-1-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Necklace with amethyst</a></h3>
+                  <span class="card__cost">$ 145</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-2-desktop@1x.webp, img/content/card-2-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-2-desktop@1x.jpg" srcset="img/content/card-2-desktop@2x.jpg 2x" width="270" height="284" alt="Layered сhoker">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Layered сhoker</a></h3>
+                  <span class="card__cost">$ 115</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-3-desktop@1x.webp, img/content/card-3-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-3-desktop@1x.jpg" srcset="img/content/card-3-desktop@2x.jpg 2x" width="270" height="284" alt="Gold chain">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Gold chain</a></h3>
+                  <span class="card__cost">$ 215</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-4-desktop@1x.webp, img/content/card-4-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-4-desktop@1x.jpg" srcset="img/content/card-4-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Galaxy earrings</a></h3>
+                  <span class="card__cost">$ 95</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-1-desktop@1x.webp, img/content/card-1-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-1-desktop@1x.jpg" srcset="img/content/card-1-desktop@2x.jpg 2x" width="270" height="284" alt="Necklace with amethyst">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Necklace with amethyst</a></h3>
+                  <span class="card__cost">$ 145</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-2-desktop@1x.webp, img/content/card-2-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-2-desktop@1x.jpg" srcset="img/content/card-2-desktop@2x.jpg 2x" width="270" height="284" alt="Layered сhoker">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Layered сhoker</a></h3>
+                  <span class="card__cost">$ 115</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-3-desktop@1x.webp, img/content/card-3-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-3-desktop@1x.jpg" srcset="img/content/card-3-desktop@2x.jpg 2x" width="270" height="284" alt="Gold chain">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Gold chain</a></h3>
+                  <span class="card__cost">$ 215</span>
+                </div>
+              </div>
+              <div class="slider__image swiper-slide">
+                <div class="card">
+                  <a class="card__img" href="card.html">
+                    <picture>
+                      <source type="image/webp" srcset="img/content/card-4-desktop@1x.webp, img/content/card-4-desktop@2x.webp 2x">
+                      <!--1x: 270px; 2x:540px-->
+                      <img src="img/content/card-4-desktop@1x.jpg" srcset="img/content/card-4-desktop@2x.jpg 2x" width="270" height="284" alt="Galaxy earrings">
+                    </picture>
+                  </a>
+                  <h3 class="card__title"><a href="card.html">Galaxy earrings</a></h3>
+                  <span class="card__cost">$ 95</span>
+                </div>
+              </div>
+            </div>
+            <div class="slider__nav swiper-button-next">
+              <svg width="29" height="9">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-next"></use>
+              </svg>
+            </div>
+            <div class="slider__nav swiper-button-prev">
+              <svg width="29" height="9">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow-prev"></use>
+              </svg>
+            </div>
+            <div class="swiper-pagination">
+            </div>
+            <div class="slider__fraction">
+              <span class="slider__current">1</span> of <span class="slider__total">6</span>
+            </div>
+        </section>
+        <section class="blog">
+          <h2 class="title blog__title">Blog</h2>
+          <a href="" class="link blog__link">Read All</a>
+          <div class="blog__wrapper">
+            <article class="article article--small article--right-text">
+              <div class="article__content">
+                <div class="article__inner">
+                  <time class="article__date" datetime="2019-09-30">September 30, 2019</time>
+                  <h3 class="title article__title">How&nbsp;to&nbsp;care&nbsp;for your&nbsp;jewellery</h3>
+                  <a class="link article__link"href="#" >Read&nbsp;Article</a>
+                </div>
+              </div>
+            </article>
+            <article class="article article--small article--left-text">
+              <div class="article__content">
+                <div class="article__inner">
+                  <time class="article__date" datetime="2019-09-23">September 23, 2019</time>
+                  <h3 class="title article__title">Power&nbsp;of crystals</h3>
+                  <a class="link article__link"href="#" >Read&nbsp;Article</a>
+                </div>
+              </div>
+            </article>
+            <article class="article article--big">
+              <div class="article__content">
+                <div class="article__inner">
+                  <time class="article__date" datetime="2019-09-16">September 16, 2019</time>
+                  <h3 class="title article__title">AW 19 trends</h3>
+                  <a class="link article__link"href="#" >Read&nbsp;Article</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="faq">
+          <h2 class="title faq__title">Frequently asked questions</h2>
+          <div class="faq__wrapper">
+            <div class="faq__colomn">
+              <h3 class="faq__subtitle faq__subtitle--nojs">What materials are the&nbsp;jewellery made of?</h3>
+              <p class="faq__text">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+            </div>
+            <div class="faq__colomn">
+              <h3 class="faq__subtitle faq__subtitle--nojs">Which countries do&nbsp;you&nbsp;deliver to?</h3>
+              <p class="faq__text">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+            </div>
+            <div class="faq__colomn">
+              <h3 class="faq__subtitle faq__subtitle--nojs">What are the payment&nbsp;methods?</h3>
+              <p class="faq__text">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+            </div>
+            <div class="faq__colomn">
+              <h3 class="faq__subtitle faq__subtitle--nojs">Can I return the jewellery&nbsp;if&nbsp;it&nbsp;didn’t fit me?</h3>
+              <p class="faq__text">Our jewellerry is made of solid gold, silver or leather.  Also, some jewellery contains precious and semiprecious stones and crystals.</p>
+            </div>
+          </div>
+        </section>
+        <section class="gallery">
+          <h2 class="title gallery__title"><span>@</span>Chjewellery</h2>
+          <a href="" class="link gallery__link">Follow Us</a>
+          <div class="gallery__wrapper">
+            <div class="gallery__img gallery__img--1 gallery__img--md">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/photo-1@1x.webp, img/content/photo-1@2x.webp 2x">
+                  <!--1x: 230px; 2x:460px-->
+                  <img src="img/content/photo-1@1x.jpg" srcset="img/content/photo-1@2x.jpg 2x" width="230" height="230" alt="square earrnings with marble">
+                </picture>
+              </a>
+            </div>
+            <div class="gallery__img gallery__img--2 gallery__img--sm">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/photo-2@1x.webp, img/content/photo-2@2x.webp 2x">
+                  <!--1x: 230px; 2x:460px-->
+                  <img src="img/content/photo-2@1x.jpg" srcset="img/content/photo-2@2x.jpg 2x" width="230" height="150" alt="cryctal chain earrnings">
+                </picture>
+              </a>
+            </div>
+            <div class="gallery__img gallery__img--3 gallery__img--lg">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/photo-3@1x.webp, img/content/photo-3@2x.webp 2x">
+                  <!--1x: 399px; 2x:798px-->
+                  <img src="img/content/photo-3@1x.jpg" srcset="img/content/photo-3@2x.jpg 2x" width="399" height="412" alt="gold earrnings with big crystal">
+                </picture>
+              </a>
+            </div>
+            <div class="gallery__img gallery__img--4 gallery__img--sm">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/photo-4@1x.webp, img/content/photo-4@2x.webp 2x">
+                  <!--1x: 230px; 2x:460px-->
+                  <img src="img/content/photo-4@1x.jpg" srcset="img/content/photo-4@2x.jpg 2x" width="230" height="150" alt="square earrnings with shells">
+                </picture>
+              </a>
+            </div>
+            <div class="gallery__img gallery__img--5 gallery__img--sm">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/photo-5@1x.webp, img/content/photo-5@2x.webp 2x">
+                  <!--1x: 230px; 2x:460px-->
+                  <img src="img/content/photo-5@1x.jpg" srcset="img/content/photo-5@2x.jpg 2x" width="230" height="150" alt="gold rings with stones">
+                </picture>
+              </a>
+            </div>
+            <div class="gallery__img gallery__img--6 gallery__img--md">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/photo-6@1x.webp, img/content/photo-6@2x.webp 2x">
+                  <!--1x: 230px; 2x:460px-->
+                  <img src="img/content/photo-6@1x.jpg" srcset="img/content/photo-6@2x.jpg 2x" width="230" height="230" alt="bracelets with crystals">
+                </picture>
+              </a>
+            </div>
+            <div class="gallery__img gallery__img--7 gallery__img--md">
+              <a href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/photo-7@1x.webp, img/content/photo-7@2x.webp 2x">
+                  <!--1x: 230px; 2x:460px-->
+                  <img src="img/content/photo-7@@1x.jpg" srcset="img/content/photo-7@2x.jpg 2x" width="230" height="230" alt="round gold earrnings">
+                </picture>
+              </a>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
 
