@@ -1,5 +1,6 @@
-const trigger = document.querySelectorAll('.faq__subtitle');
-const parentElem = document.querySelector('.faq');
+const trigger = document.querySelectorAll('.accordion__trigger');
+const toggle = document.querySelectorAll('.accordion__toggle');
+const parentElem = document.querySelector('.accordion');
 
 const initAccordion = () => {
   const getItem = (elements, className) => {
@@ -12,30 +13,39 @@ const initAccordion = () => {
     return element;
   };
 
-  trigger.forEach((item) => {
-    if (item.classList.contains('faq__subtitle--nojs')) {
-      item.classList.remove('faq__subtitle--nojs');
+  const removeClass = (element, className) => {
+    if (element.classList.contains(className)) {
+      element.classList.remove(className);
     }
+  };
+
+  trigger.forEach((item) => {
+    removeClass(item, 'accordion__trigger--nojs');
   });
 
-  const hideContent = () => {
-    trigger.forEach((item) => {
-      item.classList.remove('faq__subtitle--show');
-    });
-  };
-
-  const showContent = (i = 0) => {
-    trigger[i].classList.add('faq__subtitle--show');
-  };
-
-  hideContent();
-  showContent();
+  toggle.forEach((item) => {
+    removeClass(item, 'accordion__toggle--nojs');
+  });
 
   parentElem.addEventListener('click', (event) => {
     const target = event.target;
-    if (target && target.classList.contains('faq__subtitle')) {
+    if (target && target.classList.contains('accordion__trigger')) {
+
+      const hideContent = () => {
+        trigger.forEach((item) => {
+          item.classList.remove('accordion__trigger--show');
+        });
+      };
+
+      const showContent = (i = 0) => {
+        trigger[i].classList.add('accordion__trigger--show');
+      };
+
+      hideContent();
+      showContent();
+
       trigger.forEach((item, i) => {
-        const itemShow = getItem(trigger, 'faq__subtitle--show');
+        const itemShow = getItem(trigger, 'accordion__trigger--show');
         if (target === item) {
           if (!itemShow) {
             showContent(i);
@@ -44,6 +54,17 @@ const initAccordion = () => {
             if (itemShow !== item) {
               showContent(i);
             }
+          }
+        }
+      });
+    }
+
+    if (target && target.classList.contains('accordion__toggle')) {
+      toggle.forEach((item) => {
+        const itemToggle = getItem(toggle, 'accordion__toggle');
+        if (target === item) {
+          if (itemToggle) {
+            item.classList.toggle('accordion__toggle--show');
           }
         }
       });

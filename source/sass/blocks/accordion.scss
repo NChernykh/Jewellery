@@ -1,0 +1,50 @@
+.accordion__hide {
+  display: none;
+}
+
+.accordion__trigger,
+.accordion__toggle {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    right: 12px;
+    top: 4px;
+    border-top: 1px solid $color-medium-wood;
+    border-right: 1px solid $color-medium-wood;
+    transform: rotate(135deg);
+  }
+
+  &--show::before,
+  &--nojs::before {
+    transform: rotate(-45deg);
+  }
+
+  &--show + .accordion__hide,
+  &--nojs + .accordion__hide {
+    display: block;
+  }
+
+  @include viewport--md {
+    &::before {
+      width: 16px;
+      height: 16px;
+      right: 2px;
+      top: 2px;
+    }
+  }
+
+  @include viewport--sm {
+    font-size: 16px;
+  }
+}
+
+.accordion__toggle {
+  &::before {
+    right: 0;
+  }
+}

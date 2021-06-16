@@ -3,6 +3,8 @@ const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
 const navToggle = document.querySelector('.main-nav__toggle');
 const mainNav = document.querySelector('.main-nav');
+const filter = document.querySelector('.filter');
+const filterToggle = document.querySelector('.filter__toggle');
 
 const initBurger = () => {
 
@@ -17,6 +19,15 @@ const initBurger = () => {
       main.classList.toggle('main--js');
 
     });
+  }
+
+  if (filter) {
+    filter.classList.remove('filter--nojs', 'filter--opened');
+
+    filterToggle.addEventListener('click', function () {
+      filter.classList.toggle('filter--opened');
+    });
+
   }
 };
 

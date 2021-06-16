@@ -78,7 +78,13 @@
   }
 
   @include viewport--sm {
-    padding-bottom: 26px;
+    padding-bottom: 0;
+  }
+}
+
+.slider .swiper-slide {
+  @include viewport--sm {
+    min-height: 250px;
   }
 }
 

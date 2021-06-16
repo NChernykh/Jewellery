@@ -39,6 +39,10 @@ const initSwiper = () => {
 
   swiper.init();
 
+  if (window.screen.width < 1024) {
+    document.querySelector('.slider__container').classList.remove('swiper-no-swiping');
+  }
+
   swiper.on('resize', () => {
     if (window.screen.width >= 1024) {
       document.querySelector('.slider__container').classList.add('swiper-no-swiping');
@@ -53,6 +57,7 @@ const initSwiper = () => {
       });
     }
     if (window.screen.width < 768) {
+      document.querySelector('.slider__container').classList.remove('swiper-no-swiping');
       document.querySelectorAll('.slider__nav').forEach((item) => {
         item.classList.add('swiper-button-disabled');
       });

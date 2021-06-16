@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Project Name - Jewellery">
+
+<link rel="preload" href="fonts/poppins-500.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/cormorant-garamond-700.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" crossorigin="anonymous">
+
+<!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "../img/320 Catalog.jpg" );
+  }
+  /* Tablet */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "../img/768Catalog.jpg" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1024px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url( "../img/Catalog.jpg" );
+    }
+  }
+</style>
+<link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+<script src="../node_modules/pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
+
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>Страница фильтра товаров</title>
+
+</head>
+<body>
+  <main>
+    <a class="header__logo" href="main.html" aria-label="Переход на главную">
+      <img src="img/svg/logo.svg" width="66" height="66" alt="Логотип Jewellery">
+    </a>
+    <div class="filter__wrapper">
+      <form class="filter-form accordion" action="https://echo.htmlacademy.ru" method="POST">
+  <fieldset class="filter-form__item filter-form__item--checkbox">
+    <h3 class="accordion__toggle accordion__toggle--nojs accordion__toggle--show filter-form__name" tabindex="0">Product</h3>
+    <div class="checkbox accordion__hide">
+      <div class="checkbox__wrapper">
+        <label class="checkbox__label">
+          <input class="checkbox__input" type="checkbox" name="Necklaces" checked="checked">
+          <span class="checkbox__name">Necklaces</span>
+        </label>
+      </div>
+      <div class="checkbox__wrapper">
+        <label class="checkbox__label">
+          <input class="checkbox__input" type="checkbox" name="Chokers" checked="checked">
+          <span class="checkbox__name">Chokers</span>
+        </label>
+      </div>
+      <div class="checkbox__wrapper">
+        <label class="checkbox__label">
+          <input class="checkbox__input" type="checkbox" name="Rings">
+          <span class="checkbox__name">Rings</span>
+        </label>
+      </div>
+      <div class="checkbox__wrapper">
+        <label class="checkbox__label">
+          <input class="checkbox__input" type="checkbox" name="Earrings" checked="checked">
+          <span class="checkbox__name">Earrings</span>
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="filter-form__item filter-form__item--checkbox">
+    <h3 class="accordion__toggle accordion__toggle--nojs filter-form__name" tabindex="0">Material</h3>
+    <div class="checkbox accordion__hide">
+      <div class="checkbox__wrapper">
+        <label class="checkbox__label">
+          <input class="checkbox__input" type="checkbox" name="Silver">
+          <span class="checkbox__name">Silver</span>
+        </label>
+      </div>
+      <div class="checkbox__wrapper">
+        <label class="checkbox__label">
+          <input class="checkbox__input" type="checkbox" name="Gold">
+          <span class="checkbox__name">Gold</span>
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="filter-form__item filter-form__item--checkbox">
+    <h3 class="accordion__toggle accordion__toggle--nojs filter-form__name" tabindex="0">Collection</h3>
+    <div class="checkbox accordion__hide">
+      <div class="checkbox__wrapper">
+        <label class="checkbox__label">
+          <input class="checkbox__input" type="checkbox" name="Pink flamingo">
+          <span class="checkbox__name">Pink flamingo</span>
+        </label>
+      </div>
+      <div class="checkbox__wrapper">
+        <label class="checkbox__label">
+          <input class="checkbox__input" type="checkbox" name="Dreams">
+          <span class="checkbox__name">Dreams</span>
+        </label>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset class="filter-form__item filter-form__item--range">
+    <h3 class="accordion__toggle accordion__toggle--nojs accordion__toggle--show filter-form__name" tabindex="0">Price</h3>
+    <div class="range accordion__hide">
+      <div class="range__scale">
+        <div class="range__scale-bar"></div>
+      </div>
+      <div class="range__toggle range__toggle--min" tabindex="0" style="left: 23%">
+        <span>$ 55</span>
+      </div>
+      <div class="range__toggle range__toggle--max" tabindex="0" style="left: 76%">
+        <span>$ 155</span>
+      </div>
+    </div>
+  </fieldset>
+  <div class="filter-form__buttons">
+    <button class="button filter-form__button" type="submit">Apply</button>
+    <button class="button filter-form__reset" type="reset">Clear All</button>
+  </div>
+</form>
+
+    </div>
+  </main>
+</body>
+</html>

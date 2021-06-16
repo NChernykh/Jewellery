@@ -42,6 +42,10 @@
     display: none;
   }
 
+  &:hover {
+    box-shadow: 0 0 4px 0 $color-black;
+  }
+
   @include viewport--sm {
     height: 52px;
     width: 52px;

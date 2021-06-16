@@ -47,7 +47,6 @@
 }
 
 .faq__text {
-  display: none;
   width: 530px;
   margin: 0;
   padding-top: 10px;
@@ -68,49 +67,13 @@
 }
 
 .faq__subtitle {
-  position: relative;
   margin: 0;
   font-size: 18px;
   line-height: 23px;
   font-weight: 500;
-  cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.5;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 11px;
-    height: 11px;
-    right: 12px;
-    top: 4px;
-    border-top: 1px solid $color-medium-wood;
-    border-right: 1px solid $color-medium-wood;
-    transform: rotate(135deg);
-  }
-
-  &--show::before,
-  &--nojs::before {
-    transform: rotate(-45deg);
-  }
-
-  &--show + .faq__text,
-  &--nojs + .faq__text {
-    display: block;
-  }
-
-  @include viewport--md {
-    &::before {
-      width: 16px;
-      height: 16px;
-      right: 2px;
-      top: 2px;
-    }
-  }
-
-  @include viewport--sm {
-    font-size: 16px;
   }
 }

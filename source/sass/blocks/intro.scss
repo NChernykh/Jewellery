@@ -29,6 +29,36 @@
       background-size: 320px auto;
     }
   }
+
+  &--catalog {
+    margin-bottom: 80px;
+    background-image: url("../img/bg/intro-catalog-desktop@1x.jpg");
+
+    @include retina {
+      background-image: url("../img/bg/intro-catalog-desktop@2x.jpg");
+      background-size: 1366px auto;
+    }
+
+    @include viewport--md {
+      margin-bottom: 53px;
+      background-image: url("../img/bg/intro-catalog-tablet@1x.jpg");
+
+      @include retina {
+        background-image: url("../img/bg/intro-catalog-tablet@2x.jpg");
+        background-size: 768px auto;
+      }
+    }
+
+    @include viewport--sm {
+      margin-bottom: 42px;
+      background-image: url("../img/bg/intro-catalog-mobile@1x.jpg");
+
+      @include retina {
+        background-image: url("../img/bg/intro0catalog-mobile@2x.jpg");
+        background-size: 320px auto;
+      }
+    }
+  }
 }
 
 .intro__wrapper {
@@ -38,8 +68,30 @@
   text-align: center;
   color: $color-default-white;
 
+  &--catalog {
+    padding: 90px 40px;
+
+    .intro__title {
+      font-size: 32px;
+      line-height: 46px;
+    }
+
+    .intro__text {
+      font-size: 22px;
+      line-height: 33px;
+    }
+  }
+
   @include viewport--sm {
     padding: 193px 40px 186px;
+
+    &--catalog {
+      padding: 78px 15px 80px;
+
+      .intro__text {
+        line-height: 28px;
+      }
+    }
   }
 }
 
@@ -50,10 +102,6 @@
   line-height: 56px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-
-  @include viewport--md {
-    padding-right: 17px;
-  }
 
   @include viewport--sm {
     font-size: 38px;
@@ -67,10 +115,6 @@
   font-weight: normal;
   font-size: 38px;
   line-height: 44px;
-
-  @include viewport--md {
-    padding-right: 17px;
-  }
 
   @include viewport--sm {
     font-size: 34px;

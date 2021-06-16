@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  @@include("source/html/base/head.html")
+  <title>ProjectName — Главная</title>
+
+</head>
+
+<body style="opacity: 1;">
+
+  <div style="display: none;">
+    @@include("build/img/sprite_auto.svg")
+  </div>
+
+  <div class="wrapper">
+    @@include("source/html/base/header.html", {
+      "main": false
+    })
+
+    <main class="main">
+      <h1 class="visually-hidden">catalog jewellery</h1>
+      <section class="intro intro--catalog">
+        <div class="intro__wrapper intro__wrapper--catalog">
+          <h2 class="intro__title">All jewellery</h2>
+          <p class="intro__text">Discover picks of fashion's finest trends in our jewellery catalog</p>
+        </div>
+      </section>
+      <div class="container">
+        <div class="main__catalog">
+          <section class="filter filter--opened filter--nojs">
+            <h2 class="visually-hidden">Product filter</h2>
+            <button class=" button filter__toggle btn-reset" type="button" aria-label="Переключатель отображения фильтра" aria-pressed="false">
+              <svg width="32" height="32">
+                <use xlink:href="img/sprite_auto.svg#icon-reset"></use>
+              </svg>
+              Filter
+            </button>
+            @@include("source/html/components/filter-form.html")
+          </section>
+          <section class="catalog">
+            <div class="catalog__wrapper">
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-1-catalog@1x.webp, img/content/card-1-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-1-catalog@1x.jpg" srcset="img/content/card-1-catalog@2x.jpg 2x" width="270" height="272" alt="Double pearl earrings ">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Double pearl earrings </a></h3>
+                <span class="card__cost">$ 115</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-2-catalog@1x.webp, img/content/card-2-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-2-catalog@1x.jpg" srcset="img/content/card-2-catalog@2x.jpg 2x" width="270" height="272" alt="Choker with gold bead">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Choker with gold bead</a></h3>
+                <span class="card__cost">$ 55</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-3-catalog@1x.webp, img/content/card-3-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-3-catalog@1x.jpg" srcset="img/content/card-3-catalog@2x.jpg 2x" width="270" height="272" alt="Gold layered necklace">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Gold layered necklace</a></h3>
+                <span class="card__cost">$ 155</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-4-catalog@1x.webp, img/content/card-4-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-4-catalog@1x.jpg" srcset="img/content/card-4-catalog@2x.jpg 2x" width="270" height="272" alt="Blue gemstone pendant">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Blue gemstone pendant</a></h3>
+                <span class="card__cost">$ 105</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-5-catalog@1x.webp, img/content/card-5-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-5-catalog@1x.jpg" srcset="img/content/card-5-catalog@2x.jpg 2x" width="270" height="272" alt="Boho earrings">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Boho earrings</a></h3>
+                <span class="card__cost">$ 75</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-6-catalog@1x.webp, img/content/card-6-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-6-catalog@1x.jpg" srcset="img/content/card-6-catalog@2x.jpg 2x" width="270" height="272" alt="Gold bird necklace">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Gold bird necklace</a></h3>
+                <span class="card__cost">$ 135</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-7-catalog@1x.webp, img/content/card-7-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-7-catalog@1x.jpg" srcset="img/content/card-7-catalog@2x.jpg 2x" width="270" height="272" alt="Black leather choker">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Black leather choker</a></h3>
+                <span class="card__cost">$ 85</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-8-catalog@1x.webp, img/content/card-8-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-8-catalog@1x.jpg" srcset="img/content/card-8-catalog@2x.jpg 2x" width="270" height="272" alt="Necklace with amethyst">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Necklace with amethyst</a></h3>
+                <span class="card__cost">$ 145</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-9-catalog@1x.webp, img/content/card-9-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-9-catalog@1x.jpg" srcset="img/content/card-9-catalog@2x.jpg 2x" width="270" height="272" alt="Elephant earrings">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Elephant earrings</a></h3>
+                <span class="card__cost">$ 95</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-10-catalog@1x.webp, img/content/card-10-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-10-catalog@1x.jpg" srcset="img/content/card-10-catalog@2x.jpg 2x" width="270" height="272" alt="Threader necklace">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Threader necklace</a></h3>
+                <span class="card__cost">$ 115</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-11-catalog@1x.webp, img/content/card-11-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-11-catalog@1x.jpg" srcset="img/content/card-11-catalog@2x.jpg 2x" width="270" height="272" alt="Origami crane necklace">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Origami crane necklace</a></h3>
+                <span class="card__cost">$ 105</span>
+              </div>
+              <div class="card catalog__item">
+                <a class="card__img" href="card.html">
+                  <picture>
+                    <source type="image/webp" srcset="img/content/card-12-catalog@1x.webp, img/content/card-12-catalog@2x.webp 2x">
+                    <!--1x: 270px; 2x:540px-->
+                    <img src="img/content/card-12-catalog@1x.jpg" srcset="img/content/card-12-catalog@2x.jpg 2x" width="270" height="272" alt="Marble earrings">
+                  </picture>
+                </a>
+                <h3 class="card__title"><a href="card.html">Marble earrings</a></h3>
+                <span class="card__cost">$ 95</span>
+              </div>
+            </div>
+            <div class="catalog__pagination">
+              <div class="catalog__pagination-nav catalog__pagination-nav--prev">
+                <a class="catalog__pagination-arrow" href="" aria-label="Перейти на предыдущую страницу каталога">Precious</a>
+              </div>
+              <div class="catalog__pagination-item">
+                <a class="catalog__pagination-link catalog__pagination-link--current">1</a>
+                <a class="catalog__pagination-link" href="#" aria-label="Перейти на вторую страницу каталога">2</a>
+                <a class="catalog__pagination-link" href="#" aria-label="Перейти на третью страницу каталога">3</a>
+                <a class="catalog__pagination-link" href="#" aria-label="Перейти на четвертую страницу каталога">4</a>
+                <a class="catalog__pagination-link" href="#" aria-label="Перейти на пятую страницу каталога">5</a>
+              </div>
+              <div class="catalog__pagination-nav catalog__pagination-nav--next">
+                <a class="catalog__pagination-arrow" href="#" aria-label="Перейти на следующую страницу каталога">Next</a>
+              </div>
+            </div>
+          </section>
+      </div>
+      </div>
+
+    </main>
+
+    @@include("source/html/base/footer.html")
+
+    @@include("source/html/base/modal.html", {
+      "name": "feedback"
+    })
+
+    @@include("source/html/base/modal.html", {
+      "name": "success",
+      "fitContent": true,
+      "noScale": true,
+      "mod": "some-mod"
+    })
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

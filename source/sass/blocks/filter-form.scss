@@ -1,0 +1,61 @@
+.filter-form {
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 21px;
+
+    &:hover {
+      color: $color-medium-wood;
+    }
+  }
+
+  fieldset {
+    margin: 0;
+    padding: 25px 25px 23px;
+    border: 1px solid $color-medium-wood;
+    border-bottom: none;
+
+    &:last-of-type {
+      border-bottom: 1px solid $color-medium-wood;
+      margin-bottom: 35px;
+    }
+  }
+
+  @include viewport--md {
+    display: none;
+    box-shadow: 0px 5px 32px $color-bonjour;
+
+    fieldset {
+      border: none;
+      border-bottom: 1px solid $color-medium-wood;
+
+    }
+  }
+
+  @include viewport--sm {
+    width: 100%;
+  }
+}
+
+.filter-form__button {
+  margin-bottom: 25px;
+  width: 100%;
+  color: $color-default-white;
+  background-color: $color-medium-wood;
+
+  &:hover,
+  &:focus {
+    background-color: fade-out($color-medium-wood, 0.2);
+  }
+}
+
+.filter-form__reset {
+
+  width: 100%;
+  background-color: $color-default-white;
+
+  &:hover,
+  &:focus {
+    color: $color-medium-wood;
+  }
+}

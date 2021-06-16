@@ -1,0 +1,59 @@
+.filter {
+  grid-area: filter;
+
+  .filter__toggle {
+    display: none;
+
+    @include viewport--md {
+      margin-bottom: 50px;
+      width: 100%;
+      display: block;
+      color: $color-default-white;
+      background-color: $color-medium-wood;
+    }
+
+    @include viewport--sm {
+      margin-bottom: 40px;
+    }
+  }
+
+  @include viewport--md {
+    .filter__toggle svg {
+      display: none;
+    }
+
+    &--opened {
+      margin: 0 auto;
+      width: 442px;
+    }
+
+    &--opened .filter__toggle {
+      position: relative;
+      margin-left: auto;
+      margin-bottom: 0;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      border: none;
+      font-size: 0;
+      background-color: transparent;
+    }
+
+    &--opened .filter__toggle svg {
+      display: block;
+    }
+
+    &--opened .filter-form {
+      display: block;
+    }
+  }
+
+  @include viewport--sm {
+    &--opened {
+      width: 100%;
+    }
+  }
+}
+
+
+
