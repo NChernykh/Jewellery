@@ -76,4 +76,8 @@
   &:focus {
     opacity: 0.5;
   }
+
+  @include viewport--sm {
+    font-size: 16px;
+  }
 }

@@ -37,6 +37,12 @@
   }
 }
 
+.filter-form__buttons {
+  @include viewport--md {
+    margin: 0 40px;
+  }
+}
+
 .filter-form__button {
   margin-bottom: 25px;
   width: 100%;

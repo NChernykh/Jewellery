@@ -1,7 +1,9 @@
 import Swiper from 'swiper/bundle';
 
+const sliderBox = document.querySelector('.slider');
+
 const initSwiper = () => {
-  const swiper = new Swiper('.slider__container', {
+  const swiper = new Swiper('.slider', {
     // Optional parameters
     slidesPerView: 2,
     spaceBetween: 30,
@@ -39,25 +41,25 @@ const initSwiper = () => {
 
   swiper.init();
 
-  if (window.screen.width < 1024) {
-    document.querySelector('.slider__container').classList.remove('swiper-no-swiping');
+  if (window.screen.width < 1024 && sliderBox) {
+    sliderBox.classList.remove('swiper-no-swiping');
   }
 
   swiper.on('resize', () => {
     if (window.screen.width >= 1024) {
-      document.querySelector('.slider__container').classList.add('swiper-no-swiping');
+      sliderBox.classList.add('swiper-no-swiping');
       document.querySelectorAll('.slider__nav').forEach((item) => {
         item.classList.remove('swiper-button-disabled');
       });
     }
     if (window.screen.width < 1024) {
-      document.querySelector('.slider__container').classList.remove('swiper-no-swiping');
+      sliderBox.classList.remove('swiper-no-swiping');
       document.querySelectorAll('.slider__nav').forEach((item) => {
         item.classList.remove('swiper-button-disabled');
       });
     }
     if (window.screen.width < 768) {
-      document.querySelector('.slider__container').classList.remove('swiper-no-swiping');
+      sliderBox.classList.remove('swiper-no-swiping');
       document.querySelectorAll('.slider__nav').forEach((item) => {
         item.classList.add('swiper-button-disabled');
       });

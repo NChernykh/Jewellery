@@ -27,49 +27,51 @@ const initAccordion = () => {
     removeClass(item, 'accordion__toggle--nojs');
   });
 
-  parentElem.addEventListener('click', (event) => {
-    const target = event.target;
-    if (target && target.classList.contains('accordion__trigger')) {
+  if (parentElem) {
+    parentElem.addEventListener('click', (event) => {
+      const target = event.target;
+      if (target && target.classList.contains('accordion__trigger')) {
 
-      const hideContent = () => {
-        trigger.forEach((item) => {
-          item.classList.remove('accordion__trigger--show');
-        });
-      };
+        const hideContent = () => {
+          trigger.forEach((item) => {
+            item.classList.remove('accordion__trigger--show');
+          });
+        };
 
-      const showContent = (i = 0) => {
-        trigger[i].classList.add('accordion__trigger--show');
-      };
+        const showContent = (i = 0) => {
+          trigger[i].classList.add('accordion__trigger--show');
+        };
 
-      hideContent();
-      showContent();
+        hideContent();
+        showContent();
 
-      trigger.forEach((item, i) => {
-        const itemShow = getItem(trigger, 'accordion__trigger--show');
-        if (target === item) {
-          if (!itemShow) {
-            showContent(i);
-          } else {
-            hideContent();
-            if (itemShow !== item) {
+        trigger.forEach((item, i) => {
+          const itemShow = getItem(trigger, 'accordion__trigger--show');
+          if (target === item) {
+            if (!itemShow) {
               showContent(i);
+            } else {
+              hideContent();
+              if (itemShow !== item) {
+                showContent(i);
+              }
             }
           }
-        }
-      });
-    }
+        });
+      }
 
-    if (target && target.classList.contains('accordion__toggle')) {
-      toggle.forEach((item) => {
-        const itemToggle = getItem(toggle, 'accordion__toggle');
-        if (target === item) {
-          if (itemToggle) {
-            item.classList.toggle('accordion__toggle--show');
+      if (target && target.classList.contains('accordion__toggle')) {
+        toggle.forEach((item) => {
+          const itemToggle = getItem(toggle, 'accordion__toggle');
+          if (target === item) {
+            if (itemToggle) {
+              item.classList.toggle('accordion__toggle--show');
+            }
           }
-        }
-      });
-    }
-  });
+        });
+      }
+    });
+  }
 };
 
 export {initAccordion};

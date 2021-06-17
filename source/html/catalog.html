@@ -3,7 +3,7 @@
 <head>
 
   @@include("source/html/base/head.html")
-  <title>ProjectName — Главная</title>
+  <title>ProjectName — Каталог</title>
 
 </head>
 
@@ -28,14 +28,11 @@
       </section>
       <div class="container">
         <div class="main__catalog">
-          <section class="filter filter--opened filter--nojs">
+          <section class="filter">
             <h2 class="visually-hidden">Product filter</h2>
-            <button class=" button filter__toggle btn-reset" type="button" aria-label="Переключатель отображения фильтра" aria-pressed="false">
-              <svg width="32" height="32">
-                <use xlink:href="img/sprite_auto.svg#icon-reset"></use>
-              </svg>
+            <a class="filter__toggle" href="filter.html">
               Filter
-            </button>
+            </a>
             @@include("source/html/components/filter-form.html")
           </section>
           <section class="catalog">

@@ -1,0 +1,23 @@
+.shop {
+  position: relative;
+  margin-bottom: 103px;
+
+  @include viewport--md {
+    margin-bottom: 53px;
+  }
+}
+
+.shop__wrapper {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.shop__title {
+  margin-bottom: 23px;
+
+  @include viewport--md {
+    margin-bottom: 20px;
+  }
+}

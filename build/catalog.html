@@ -17,20 +17,20 @@
     background-repeat: no-repeat;
     background-position:  50% 0;
     /* Mobile layout by default */
-    background-image: url( "../img/320 Catalog.jpg" );
+    background-image: url( "../img/320 Product.jpg" );
   }
   /* Tablet */
   @media ( min-width: 768px ) {
     HTML {
       /* Tablet layout */
-      background-image: url( "../img/768Catalog.jpg" );
+      background-image: url( "../img/768 Product.jpg" );
     }
   }
   /* Desktop */
   @media ( min-width: 1024px ) {
     HTML {
       /* Desktop layout */
-      background-image: url( "../img/Catalog.jpg" );
+      background-image: url( "../img/Product.jpg" );
     }
   }
 </style>
@@ -40,7 +40,7 @@
 
 <link rel="stylesheet" href="css/style.min.css">
 
-  <title>ProjectName — Главная</title>
+  <title>ProjectName — Каталог</title>
 
 </head>
 
@@ -167,14 +167,11 @@
       </section>
       <div class="container">
         <div class="main__catalog">
-          <section class="filter filter--opened filter--nojs">
+          <section class="filter">
             <h2 class="visually-hidden">Product filter</h2>
-            <button class=" button filter__toggle btn-reset" type="button" aria-label="Переключатель отображения фильтра" aria-pressed="false">
-              <svg width="32" height="32">
-                <use xlink:href="img/sprite_auto.svg#icon-reset"></use>
-              </svg>
+            <a class="filter__toggle" href="filter.html">
               Filter
-            </button>
+            </a>
             <form class="filter-form accordion" action="https://echo.htmlacademy.ru" method="POST">
   <fieldset class="filter-form__item filter-form__item--checkbox">
     <h3 class="accordion__toggle accordion__toggle--nojs accordion__toggle--show filter-form__name" tabindex="0">Product</h3>

@@ -1,59 +1,61 @@
 .filter {
   grid-area: filter;
+}
 
-  .filter__toggle {
-    display: none;
+.filter__wrapper {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding-bottom: 40px;
+  max-width: 442px;
 
-    @include viewport--md {
-      margin-bottom: 50px;
-      width: 100%;
-      display: block;
-      color: $color-default-white;
-      background-color: $color-medium-wood;
-    }
+  .header__logo {
+    position: relative;
+    margin-bottom: 40px;
 
-    @include viewport--sm {
-      margin-bottom: 40px;
-    }
-  }
-
-  @include viewport--md {
-    .filter__toggle svg {
-      display: none;
-    }
-
-    &--opened {
+    img {
       margin: 0 auto;
-      width: 442px;
-    }
-
-    &--opened .filter__toggle {
-      position: relative;
-      margin-left: auto;
-      margin-bottom: 0;
-      padding: 0;
-      width: 32px;
-      height: 32px;
-      border: none;
-      font-size: 0;
-      background-color: transparent;
-    }
-
-    &--opened .filter__toggle svg {
-      display: block;
-    }
-
-    &--opened .filter-form {
-      display: block;
     }
   }
 
-  @include viewport--sm {
-    &--opened {
-      width: 100%;
-    }
+  .btn-reset {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    top: 16px;
+    right: -16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    font-size: 0;
+    background-color: transparent;
+  }
+
+  .filter-form {
+    display: block;
+    padding-bottom: 40px;
   }
 }
 
+.filter__toggle {
+  display: none;
+
+  @include viewport--md {
+    display: block;
+    height: fit-content;
+    padding: 21px;
+    font: inherit;
+    text-align: center;
+    border: 1px solid #a87b62;
+    margin-bottom: 50px;
+    width: 100%;
+    display: block;
+    color: $color-default-white;
+    background-color: $color-medium-wood;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 40px;
+  }
+}
 
 
