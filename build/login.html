@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="description" content="Project Name - Jewellery">
+
+<link rel="preload" href="fonts/poppins-500.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/cormorant-garamond-700.woff2" as="font" crossorigin="anonymous">
+<link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" crossorigin="anonymous">
+
+<link rel="stylesheet" href="css/style.min.css">
+
+  <title>Войти в личный кабинет</title>
+
+</head>
+<body>
+  <main>
+    <div class="container container--modal">
+      <a class="header__logo" href="main.html" aria-label="Переход на главную">
+        <img src="img/svg/logo.svg" width="66" height="66" alt="Логотип Jewellery">
+      </a>
+
+      <div class="login">
+  <form class="login__form" action="https://echo.htmlacademy.ru" method="POST">
+    <h3 class="title login__title">Log In</h3>
+    <div class="login__block">
+      <div class="login__item">
+        <label class="login__label" aria-label="Введите почту">
+          <input data-mail class="login__input" type="email" name="email" placeholder="Your E-mail" required>
+        </label>
+      </div>
+      <div class="login__item">
+        <label class="login__label" aria-label="Введите пароль">
+          <input class="login__input" type="password"  name="password" placeholder="Password" required>
+        </label>
+        <a href="#" class="login__link">Forgot your password?</a>
+      </div>
+    </div>
+    <button class="button button--color login__button" type="submit" aria-label="Войти в личный кабинет">Log In</button>
+    <div class="login__inner">
+      <span>Don’t have an account?</span>
+      <a href="#">Sign Up</a>
+    </div>
+  </form>
+</div>
+
+    </div>
+  </main>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+</html>

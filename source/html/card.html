@@ -7,7 +7,7 @@
 
 </head>
 
-<body style="opacity: 0.5;">
+<body>
 
   <div style="display: none;">
     @@include("build/img/sprite_auto.svg")
@@ -25,7 +25,8 @@
         <section class="product">
           <h2 class="visually-hidden">product card</h2>
           <div class="product__wrapper">
-            <div class="product__gallery">
+            <div class="product__photos">
+              <div class="product__gallery">
               <a href="#" class="product__pic">
                 <picture>
                   <source type="image/webp" srcset="img/content/product-sm-1@1x.webp, img/content/product-sm-1@2x.webp 2x">
@@ -47,41 +48,45 @@
                   <img src="img/content/product-sm-3@1x.jpg" srcset="img/content/product-sm-3@2x.jpg 2x" width="100" height="125" alt="womens necklace set">
                 </picture>
               </a>
-            </div>
-            <div class="product__img">
-              <picture>
-                <source type="image/webp" srcset="img/content/product-lg-1@1x.webp, img/content/product-lg-1@2x.webp 2x">
-                <!--1x: 470px; 2x:940px-->
-                <img src="img/content/product-lg-1@1x.jpg" srcset="img/content/product-lg-1@2x.jpg 2x" width="470" height="435" alt="necklace detail">
-              </picture>
-            </div>
-          </div>
-          <div class="product__description">
-            <h3 class="title product__title">Gold Necklace</h3>
-            <span class="product__price">$ 115</span>
-            <div class="product__menu">
-              <a href="#" class="product__link">Description</a>
-              <a href="#" class="product__link product__link--active">Additional info</a>
-            </div>
-            <div class="product__block">
-              <div class="product__item">
-                <span>Metal type</span>
-                <span>Gold 585</span>
               </div>
-              <div class="product__item">
-                <span>Stone</span>
-                <span>Turquoise</span>
-              </div>
-              <div class="product__item">
-                <span>Size</span>
-                <span>18”/20”</span>
+              <div class="product__img">
+                <picture>
+                  <source type="image/webp" srcset="img/content/product-lg-1@1x.webp, img/content/product-lg-1@2x.webp 2x">
+                  <!--1x: 470px; 2x:940px-->
+                  <img src="img/content/product-lg-1@1x.jpg" srcset="img/content/product-lg-1@2x.jpg 2x" width="470" height="435" alt="necklace detail">
+                </picture>
+                <div class="product__fraction">
+                  <span class="product__current">1</span> of <span class="product__total">4</span>
+                </div>
               </div>
             </div>
-            <a href="#" class="button product__button">Add to cart</a>
-            <div class="product__add">
-              <span>14 Day Returns</span>
-              <span>2-Year Warranty</span>
-              <span>Free Shipping</span>
+            <div class="product__description">
+              <h3 class="title product__title">Gold Necklace</h3>
+              <span class="product__price">$ 115</span>
+              <div class="product__menu">
+                <a href="#" class="product__link">Description</a>
+                <a href="#" class="product__link product__link--active">Additional info</a>
+              </div>
+              <div class="product__block">
+                <div class="product__item">
+                  <span>Metal type</span>
+                  <span>Gold 585</span>
+                </div>
+                <div class="product__item">
+                  <span>Stone</span>
+                  <span>Turquoise</span>
+                </div>
+                <div class="product__item">
+                  <span>Size</span>
+                  <span>18”/20”</span>
+                </div>
+              </div>
+              <a data-modal="add" class="button button--color product__button">Add to cart</a>
+              <div class="product__add">
+                <span>14 Day Returns</span>
+                <span>2-Year Warranty</span>
+                <span>Free Shipping</span>
+              </div>
             </div>
           </div>
         </section>
@@ -94,20 +99,19 @@
           @@include("source/html/components/slider.html")
 
         </section>
+      </div>
     </main>
 
     @@include("source/html/base/footer.html")
 
     @@include("source/html/base/modal.html", {
-      "name": "feedback"
+      "name": "login",
     })
 
     @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
+      "name": "add",
     })
+
   </div>
 
   <script src="js/vendor.min.js"></script>

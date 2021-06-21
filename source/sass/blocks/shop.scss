@@ -1,9 +1,13 @@
 .shop {
   position: relative;
-  margin-bottom: 103px;
+  margin-bottom: 106px;
 
   @include viewport--md {
-    margin-bottom: 53px;
+    margin-bottom: 55px;
+  }
+
+  @include viewport--sm {
+    margin-bottom: 51px;
   }
 }
 

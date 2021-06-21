@@ -14,7 +14,7 @@
   min-height: 100px;
   padding: 95px 0 30px;
 
-  @media (max-width: 1350px) {
+  @media (max-width: 1100px) {
     flex-wrap: wrap;
   }
 
@@ -42,9 +42,7 @@
   }
 
   @media (max-width: 1350px) {
-    &--form {
-      margin-right: 160px;
-    }
+    margin-right: 40px;
   }
 
   @include viewport--md {
@@ -64,6 +62,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: 1350px) {
+    margin-right: 30px;
   }
 
   @include viewport--md {

@@ -1,12 +1,27 @@
 .header {
   display: flex;
   align-items: center;
-  min-height: 80px;
+  min-height: 60px;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 7px;
+
+  &--card {
+    margin-bottom: 70px;
+  }
+
+  &--card,
+  &--catalog {
+    .header__logo:hover {
+      box-shadow: 0 0 4px 0 $color-black;
+    }
+  }
 
   @include viewport--md {
     padding-bottom: 47px;
+
+    &--card {
+      margin-bottom: 20px;
+    }
 
     &--opened {
       background-color: $color-medium-wood;
@@ -19,6 +34,10 @@
 
   @include viewport--sm {
     padding-bottom: 30px;
+
+    &--card {
+      margin-bottom: 0;
+    }
 
     &--opened {
       padding-bottom: 25px;
@@ -40,10 +59,6 @@
 
   &--tablet {
     display: none;
-  }
-
-  &:hover {
-    box-shadow: 0 0 4px 0 $color-black;
   }
 
   @include viewport--sm {

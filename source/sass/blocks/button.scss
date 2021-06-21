@@ -1,8 +1,21 @@
 .button {
   display: block;
+  width: 100%;
   height: fit-content;
   padding: 21px;
   font: inherit;
   text-align: center;
+  background-color: $color-default-white;
   border: 1px solid $color-medium-wood;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: fade-out($color-medium-wood, 0.2);
+  }
+
+  &--color {
+    color: $color-default-white;
+    background-color: $color-medium-wood;
+  }
 }

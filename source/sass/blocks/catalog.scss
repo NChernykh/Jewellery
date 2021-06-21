@@ -2,6 +2,10 @@
   grid-area: catalog;
   margin-bottom: 73px;
 
+  @include viewport--md {
+    margin-bottom: 70px;
+  }
+
   @include viewport--sm {
     margin-bottom: 62px;
   }
@@ -11,30 +15,34 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 
   @include viewport--md {
-    margin-bottom: 47px;
+    margin-bottom: 42px;
   }
 
   @include viewport--sm {
-    margin-bottom: 15px;
+    margin-bottom: 18px;
   }
 }
 
 .catalog__item {
   width: 31%;
   margin-right: 3.5%;
-  margin-bottom: 4%;
+  margin-bottom: 4.5%;
 
   &:nth-child(3n) {
     margin-right: 0;
   }
 
+  @include viewport--md {
+    margin-bottom: 5%;
+  }
+
   @include viewport--sm {
     width: 45%;
     margin-right: 10%;
-    margin-bottom: 7%;
+    margin-bottom: 9%;
 
     &:nth-child(3n) {
       margin-right: 10%;

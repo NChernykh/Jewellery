@@ -2,42 +2,13 @@
   grid-area: filter;
 }
 
-.filter__wrapper {
-  margin: 0 auto;
-  margin-top: 30px;
-  padding-bottom: 40px;
-  max-width: 442px;
-
-  .header__logo {
-    position: relative;
-    margin-bottom: 40px;
-
-    img {
-      margin: 0 auto;
-    }
-  }
-
-  .btn-reset {
-    position: relative;
-    display: block;
-    margin-left: auto;
-    top: 16px;
-    right: -16px;
-    width: 32px;
-    height: 32px;
-    border: none;
-    font-size: 0;
-    background-color: transparent;
-  }
-
-  .filter-form {
-    display: block;
-    padding-bottom: 40px;
-  }
-}
-
 .filter__toggle {
   display: none;
+
+  &:hover,
+  &:focus {
+    background-color: fade-out($color-medium-wood, 0.2);
+  }
 
   @include viewport--md {
     display: block;
@@ -48,7 +19,6 @@
     border: 1px solid #a87b62;
     margin-bottom: 50px;
     width: 100%;
-    display: block;
     color: $color-default-white;
     background-color: $color-medium-wood;
   }
@@ -57,5 +27,3 @@
     margin-bottom: 40px;
   }
 }
-
-

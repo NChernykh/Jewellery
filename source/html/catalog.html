@@ -7,7 +7,7 @@
 
 </head>
 
-<body style="opacity: 1;">
+<body>
 
   <div style="display: none;">
     @@include("build/img/sprite_auto.svg")
@@ -15,7 +15,8 @@
 
   <div class="wrapper">
     @@include("source/html/base/header.html", {
-      "main": false
+      "main": false,
+      "catalog": true
     })
 
     <main class="main">
@@ -186,7 +187,7 @@
               </div>
             </div>
           </section>
-      </div>
+        </div>
       </div>
 
     </main>
@@ -194,15 +195,9 @@
     @@include("source/html/base/footer.html")
 
     @@include("source/html/base/modal.html", {
-      "name": "feedback"
+      "name": "login"
     })
 
-    @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
-    })
   </div>
 
   <script src="js/vendor.min.js"></script>

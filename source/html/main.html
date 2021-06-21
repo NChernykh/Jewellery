@@ -6,7 +6,7 @@
   <title>ProjectName — Главная</title>
 
 </head>
-<body style="opacity: 1;">
+<body>
 
   <div style="display: none;">
     @@include("build/img/sprite_auto.svg")
@@ -44,7 +44,7 @@
                 <div class="article__inner">
                   <time class="article__date" datetime="2019-09-30">September 30, 2019</time>
                   <h3 class="title article__title">How&nbsp;to&nbsp;care&nbsp;for your&nbsp;jewellery</h3>
-                  <a class="link article__link"href="#" >Read&nbsp;Article</a>
+                  <a class="link article__link" href="#" >Read&nbsp;Article</a>
                 </div>
               </div>
             </article>
@@ -53,7 +53,7 @@
                 <div class="article__inner">
                   <time class="article__date" datetime="2019-09-23">September 23, 2019</time>
                   <h3 class="title article__title">Power&nbsp;of crystals</h3>
-                  <a class="link article__link"href="#" >Read&nbsp;Article</a>
+                  <a class="link article__link" href="#" >Read&nbsp;Article</a>
                 </div>
               </div>
             </article>
@@ -62,7 +62,7 @@
                 <div class="article__inner">
                   <time class="article__date" datetime="2019-09-16">September 16, 2019</time>
                   <h3 class="title article__title">AW 19 trends</h3>
-                  <a class="link article__link"href="#" >Read&nbsp;Article</a>
+                  <a class="link article__link" href="#" >Read&nbsp;Article</a>
                 </div>
               </div>
             </article>
@@ -164,18 +164,12 @@
     @@include("source/html/base/footer.html")
 
     @@include("source/html/base/modal.html", {
-      "name": "feedback"
+      "name": "login"
     })
 
-    @@include("source/html/base/modal.html", {
-      "name": "success",
-      "fitContent": true,
-      "noScale": true,
-      "mod": "some-mod"
-    })
   </div>
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
+
 </body>
 </html>

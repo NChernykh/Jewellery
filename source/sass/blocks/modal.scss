@@ -36,10 +36,10 @@
     align-items: center;
     width: 100%;
     min-height: 100%;
-    padding: 60px 40px;
+    padding: 30px 40px;
 
     @include viewport--sm {
-      padding: 60px 16px;
+      padding: 10px 16px;
     }
   }
 
@@ -57,21 +57,30 @@
   &__content {
     position: relative;
 
-    width: 600px;
-    padding: 40px;
+    width: 500px;
+    padding: 47px 35px;
 
     background-color: $color-default-white;
 
     @include viewport--sm {
       width: 100%;
-      padding: 20px;
+      padding: 40px 15px;
     }
   }
 
   &__close-btn {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 19px;
+    right: 19px;
+
+    @include viewport--sm {
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  &__close-btn:hover svg {
+    fill: $color-medium-wood;
   }
 
   &--responsive {
@@ -101,5 +110,26 @@
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
+  }
+}
+
+.modal--login {
+  .modal__content {
+    padding: 0;
+    width: 430px;
+
+    @include viewport--sm {
+      width: 270px;
+    }
+  }
+
+  .modal-add {
+    display: none;
+  }
+}
+
+.modal--add {
+  .login {
+    display: none;
   }
 }

@@ -22,3 +22,44 @@
     }
   }
 }
+
+.container--modal {
+  margin-top: 80px;
+  padding: 0;
+  max-width: 442px;
+
+  @include viewport--sm {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .header__logo {
+    top: 10px;
+
+    &:hover {
+      box-shadow: 0 0 4px 0 $color-black;
+    }
+  }
+
+  .filter-form {
+    display: block;
+    padding-bottom: 40px;
+  }
+
+  .btn-reset {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    top: 16px;
+    right: -16px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    font-size: 0;
+    background-color: transparent;
+  }
+
+  .btn-reset:hover svg {
+    fill: $color-medium-wood;
+  }
+}

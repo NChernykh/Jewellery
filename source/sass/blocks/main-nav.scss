@@ -3,11 +3,11 @@
   padding-top: 10px;
 
   @include viewport--md {
-    padding-top: 20px;
+    padding-top: 50px;
   }
 
   @include viewport--sm {
-    padding-top: 3px;
+    padding-top: 32px;
   }
 }
 
@@ -27,12 +27,13 @@
 
   &--user {
     justify-content: flex-end;
-    margin-bottom: 69px;
+    margin-bottom: 60px;
+    width: 40%;
+    margin-left: auto;
 
     @include viewport--md {
       display: none;
-      margin-top: 50px;
-      margin-bottom: 55px;
+      margin-bottom: 0;
     }
   }
 
@@ -44,12 +45,12 @@
   @include viewport--md {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
   }
 }
 
 .main-nav__item {
   margin-right: 35px;
+  padding-bottom: 10px;
 
   &--form {
     margin-right: auto;
@@ -73,7 +74,7 @@
   }
 
   @include viewport--md {
-    margin-bottom: 21px;
+    margin-bottom: 11px;
 
     &--login {
       display: none;
@@ -126,10 +127,16 @@
 
   @include viewport--md {
     display: block;
+    position: absolute;
+    top: 21px;
 
     &:hover {
       opacity: 0.5;
     }
+  }
+
+  @include viewport--sm {
+    top: 3px;
   }
 }
 
@@ -139,16 +146,11 @@
   }
 
   .main-nav--opened {
-    padding-top: 20px;
+    padding-top: 117px;
   }
 
   .main-nav--opened .main-nav__wrapper {
     display: block;
-  }
-
-  .main-nav--opened .main-nav__list--user {
-    margin-top: 58px;
-    margin-bottom: 25px;
   }
 
   .main-nav--opened .main-nav__list--site {
@@ -171,12 +173,7 @@
 
 @include viewport--sm {
   .main-nav--opened {
-    padding-top: 3px;
-  }
-
-  .main-nav--opened .main-nav__list--user {
-    margin-top: 40px;
-    margin-bottom: 15px;
+    padding-top: 72px;
   }
 
   .main-nav--opened .main-nav__list--site {

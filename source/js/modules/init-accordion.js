@@ -42,9 +42,6 @@ const initAccordion = () => {
           trigger[i].classList.add('accordion__trigger--show');
         };
 
-        hideContent();
-        showContent();
-
         trigger.forEach((item, i) => {
           const itemShow = getItem(trigger, 'accordion__trigger--show');
           if (target === item) {
