@@ -19,6 +19,16 @@ const initAccordion = () => {
     }
   };
 
+  const hideContent = () => {
+    trigger.forEach((item) => {
+      item.classList.remove('accordion__trigger--show');
+    });
+  };
+
+  const showContent = (i = 0) => {
+    trigger[i].classList.add('accordion__trigger--show');
+  };
+
   trigger.forEach((item) => {
     removeClass(item, 'accordion__trigger--nojs');
   });
@@ -31,16 +41,6 @@ const initAccordion = () => {
     parentElem.addEventListener('click', (event) => {
       const target = event.target;
       if (target && target.classList.contains('accordion__trigger')) {
-
-        const hideContent = () => {
-          trigger.forEach((item) => {
-            item.classList.remove('accordion__trigger--show');
-          });
-        };
-
-        const showContent = (i = 0) => {
-          trigger[i].classList.add('accordion__trigger--show');
-        };
 
         trigger.forEach((item, i) => {
           const itemShow = getItem(trigger, 'accordion__trigger--show');
@@ -69,6 +69,42 @@ const initAccordion = () => {
       }
     });
   }
+
+  parentElem.addEventListener('keydown', (event) => {
+    const target = event.target;
+    if (target && target.classList.contains('accordion__trigger')) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        trigger.forEach((item, i) => {
+          const itemShow = getItem(trigger, 'accordion__trigger--show');
+          if (target === item) {
+            if (!itemShow) {
+              showContent(i);
+            } else {
+              hideContent();
+              if (itemShow !== item) {
+                showContent(i);
+              }
+            }
+          }
+        });
+      }
+    }
+
+    if (target && target.classList.contains('accordion__toggle')) {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        toggle.forEach((item) => {
+          const itemToggle = getItem(toggle, 'accordion__toggle');
+          if (target === item) {
+            if (itemToggle) {
+              item.classList.toggle('accordion__toggle--show');
+            }
+          }
+        });
+      }
+    }
+  });
 };
 
 export {initAccordion};

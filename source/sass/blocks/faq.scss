@@ -21,7 +21,7 @@
 
 .faq__wrapper {
   margin: 0 auto;
-  width: 970px;
+  max-width: 970px;
   border: 1px solid $color-medium-wood;
 
   @include viewport--md {
@@ -68,6 +68,7 @@
 
 .faq__subtitle {
   margin: 0;
+  padding-right: 29px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 500;

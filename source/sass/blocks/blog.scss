@@ -29,6 +29,8 @@
   }
 
   @include viewport--sm {
+    margin: 0 auto;
+    max-width: 400px;
     row-gap: 40px;
   }
 }

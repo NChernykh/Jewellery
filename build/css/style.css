@@ -1721,7 +1721,8 @@ button,
   margin: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; }
+          appearance: none;
+  border: none; }
 
 .checkbox__name {
   display: inline-block; }
@@ -2174,6 +2175,8 @@ button,
           grid-template-areas: "article-1" "article-2" "article-3"; } }
   @media (max-width: 767px) {
     .blog__wrapper {
+      margin: 0 auto;
+      max-width: 400px;
       row-gap: 40px; } }
 
 .blog__title {
@@ -2358,7 +2361,7 @@ button,
 
 .faq__wrapper {
   margin: 0 auto;
-  width: 970px;
+  max-width: 970px;
   border: 1px solid #a87b62; }
   @media (max-width: 1023px) {
     .faq__wrapper {
@@ -2395,6 +2398,7 @@ button,
 
 .faq__subtitle {
   margin: 0;
+  padding-right: 29px;
   font-size: 18px;
   line-height: 23px;
   font-weight: 500; }
@@ -2508,14 +2512,16 @@ button,
     .gallery__img--7 {
       display: none; } }
 
+.gallery__img img {
+  width: 100%;
+  height: 100%; }
+
 @media (max-width: 767px) {
   .gallery__img a {
     display: block;
     width: 100%;
     height: 100%; }
   .gallery__img img {
-    width: 100%;
-    height: 100%;
     -o-object-fit: cover;
        object-fit: cover; } }
 
