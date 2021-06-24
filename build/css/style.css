@@ -1802,15 +1802,14 @@ button,
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 192dpi), (max-width: 1023px) and (min-resolution: 2dppx) {
     .intro {
       background-image: url("../img/bg/intro-tablet@2x.jpg");
-      background-size: 768px auto; } }
+      background-size: 100% auto; } }
   @media (max-width: 767px) {
     .intro {
       margin-bottom: 60px;
       background-image: url("../img/bg/intro-mobile@1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
     .intro {
-      background-image: url("../img/bg/intro-mobile@2x.jpg");
-      background-size: 320px auto; } }
+      background-image: url("../img/bg/intro-mobile@2x.jpg"); } }
 
 .intro--catalog {
   margin-bottom: 83px;
@@ -1826,15 +1825,14 @@ button,
   @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (min-resolution: 192dpi), (max-width: 1023px) and (min-resolution: 2dppx) {
     .intro--catalog {
       background-image: url("../img/bg/intro-catalog-tablet@2x.jpg");
-      background-size: 768px auto; } }
+      background-size: 100% auto; } }
   @media (max-width: 767px) {
     .intro--catalog {
       margin-bottom: 42px;
       background-image: url("../img/bg/intro-catalog-mobile@1x.jpg"); } }
   @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
     .intro--catalog {
-      background-image: url("../img/bg/intro-catalog-mobile@2x.jpg");
-      background-size: 320px auto; } }
+      background-image: url("../img/bg/intro-catalog-mobile@2x.jpg"); } }
 
 .intro__wrapper {
   margin: 0 auto;
@@ -2176,7 +2174,7 @@ button,
   @media (max-width: 767px) {
     .blog__wrapper {
       margin: 0 auto;
-      max-width: 400px;
+      max-width: 340px;
       row-gap: 40px; } }
 
 .blog__title {
