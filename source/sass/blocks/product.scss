@@ -235,14 +235,14 @@
 }
 
 .product ~ .shop {
-  margin-bottom: 115px;
+  margin-bottom: 112px;
 
   .shop__title {
     margin-bottom: 18px;
   }
 
   @include viewport--md {
-    margin-bottom: 67px;
+    margin-bottom: 60px;
   }
 
   @include viewport--sm {

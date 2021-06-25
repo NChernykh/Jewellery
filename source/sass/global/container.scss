@@ -2,10 +2,10 @@
   width: 100%;
   max-width: 1366px;
   margin: 0 auto;
-  padding: 0 88px;
+  padding: 0 98px;
 
   @include viewport--lg {
-    padding: 0 88px;
+    padding: 0 98px;
   }
 
   @include viewport--md {
